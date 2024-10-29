@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f0;
+    color: #333;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.search button {
+    background-color: #f0a500;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+}
+
+.user-controls button,
+.user-controls select {
+    margin-left: 10px;
+}
+
+/* Hero styles */
+.hero {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-form button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-form button.active {
+    background-color: #f0a500;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-inputs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-inputs select,
+.form-inputs input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.discover {
+    background-color: #f0a500 !important;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.globe {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 48px;
+}
+
+/* Top Flights styles */
+.top-flights {
+    margin-bottom: 40px;
+}
+
+.top-flights h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.flight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.flight-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flight-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.flight-info {
+    padding: 20px;
+}
+
+.flight-list {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flight-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.flight-item:last-child {
+    border-bottom: none;
+}
+
+.book-button {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Why Us styles */
+.why-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.why-us-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.why-us-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Customer Testimonials styles */
+.testimonials {
+    margin-bottom: 40px;
+}
+
+.testimonials h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testimonial-card p {
+    margin-bottom: 10px;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+}
+
+/* Popular Questions styles */
+.popular-questions {
+    margin-bottom: 40px;
+}
+
+.popular-questions h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.question-list {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.question-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.question-item:last-child {
+    border-bottom: none;
+}
+
+.question-item h4 {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.question-item p {
+    display: none;
+}
+
+.question-item.active p {
+    display: block;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer li {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.footer button {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
